@@ -1,97 +1,84 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactme</title>
+    <title>Contact Me</title>
     <style>
-        body{
-            position: relative;
+        body {
             background-image: url(tbia.jpg);
+            margin: 0; 
+            padding-top: 60px; 
         }
 
         .header {
-      width: 100%;
-      text-align: right;
-      
-      position: fixed;
-     
-     font-size: larger;
-      top: 0;
-  }
-  input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%; 
-            
-            padding-right: 300px;
-            padding-bottom: 25px;
+            width: 100%;
+            text-align: right;
+            position: fixed;
+            top: 0;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px; 
+        }
+
+        .form-container {
+            width: 80%;
+            margin: 0 auto; 
+            background-color: rgba(255, 255, 255, 0.7); 
+            padding: 20px; 
+            border-radius: 10px; 
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: calc(100% - 10px); 
             font-size: 16px;
-            border: 1px solid #ccc; 
+            border: 1px solid #ccc;
             border-radius: 5px;
             box-sizing: border-box;
-            margin-bottom: 10px; 
+            margin-bottom: 10px;
+            padding: 10px; 
         }
-  
-        .form-container {
-            width: 20%; 
-           
-            margin: 0 auto; 
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
         }
-   
-  nav a {
-   
-   text-decoration: none;
-   display: inline-block;
-        
-  }
-  .pre
-   {
-    border-radius: 20%;
-    background-color:silver;
-    color: black;
-  
-   }
-   
-   </style>
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <div class="header">
-        <nav ><p>   <a href="aboutme.html" style="color: black;">About me</a>&nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;
-       
-         
-            
+        <nav>
+            <a href="aboutme.html" style="color: black;">About Me</a>
             <a href="edu.html" style="color: black;">Education</a>&nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;
             <a href="Cirtification.html" style="color: black;">Cirtificates</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
             <a href="Contactme.html" style="color: black;">Contact me</a>&nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;
-        </p>
-       
         </nav>
-      
     </div>
-    <br>
-    <br>
-    <br>
-   
-    <div class="form-container">
-        <h2 style="text-align: center;">Contact me</h2>
-    <form action="" >
-      <label for="fn"  >First Name</label><br>
-      <input type="text"  id="fn" required ><br>
-      <label for="ln">Last Name</label><br>
-      <input type="text"  id="ln" required><br>
-      <label for="p">phone number</label><br>
-      <input type="text"  id="p" required><br>
-      <label for="e">Email</label><br>
-      <input type="email"  id="e" required>
-    </form>
-    <br>
-    
 
-    <form action="" style="text-align: center;">
-        <input type="submit" >
-       </form>
+    <div class="form-container">
+        <h2 style="text-align: center;">Contact Me</h2>
+        <form action="" method="POST">
+            <label for="fn">First Name</label><br>
+            <input type="text" id="fn" name="first_name" required><br>
+            <label for="ln">Last Name</label><br>
+            <input type="text" id="ln" name="last_name" required><br>
+            <label for="p">Phone Number</label><br>
+            <input type="text" id="p" name="phone_number" required><br>
+            <label for="e">Email</label><br>
+            <input type="email" id="e" name="email" required><br>
+            <input type="submit" value="Submit">
+        </form>
     </div>
+
     <br>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15550.360986273745!2d76.07271774904616!3d12.998039297114119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba537e19eba7f33%3A0xa842d7cf35b20a98!2sThanniruhalla%2C%20Hassan%2C%20Karnataka%20573201!5e0!3m2!1sen!2sin!4v1710219566184!5m2!1sen!2sin" width="20%" height="15%" style="border:0; margin-left: 40%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade "  ></iframe>
     <br><br>
@@ -100,10 +87,10 @@
   
     
     <a href="home.html" class="pre" style="text-decoration: none;padding:10px;   width:  40px;text-align: center; margin-left: 95%;">Home</a>
-      
+    
 
-       
-   
-       
 </body>
 </html>
+   
+   
+   
